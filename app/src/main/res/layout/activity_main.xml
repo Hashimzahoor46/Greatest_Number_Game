@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A3434"
+    android:backgroundTint="#BC718757"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="191dp"
+        android:layout_height="44dp"
+        android:layout_margin="20dp"
+        android:text="@string/Choose_the_largest"
+        android:textAlignment="center"
+
+        android:textColor="#0B0101"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <Button
+        android:id="@+id/btnleft"
+        :layout_constraintEnd_toEndOf="parent"
+        android:layout_width="76dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#0D385E"
+        android:padding="20dp"
+        android:text="1"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.632" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnmid"-->
+    <!--        :layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_width="76dp"-->
+    <!--        android:layout_height="78dp"-->
+    <!--        android:padding="20dp"-->
+    <!--        android:text="5"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/btnrgt"-->
+    <!--        app:layout_constraintHorizontal_bias="0.531"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/btnleft"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView2"-->
+    <!--        app:layout_constraintVertical_bias="0.524" />-->
+
+    <Button
+        android:id="@+id/btnrgt"
+        :layout_constraintEnd_toEndOf="parent"
+        android:layout_width="76dp"
+        android:layout_height="78dp"
+        android:backgroundTint="#0D385E"
+        android:padding="20dp"
+        android:text="3"
+
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toEndOf="@+id/btnleft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632"
+        app:rippleColor="#4C3131" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="324dp"
+        android:layout_height="33dp"
+        android:text="@string/display_message"
+        android:textAlignment="center"
+        android:textColor="#0B0101"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
